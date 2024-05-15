@@ -2,34 +2,31 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-widt<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ỨNG DỤNG QUẢN LÝ BÁN TV - AGU PROJECT</title>
     <style>
-        /* Thiết lập kiểu CSS */
+        /* Global styles */
         body {
             font-family: Arial, sans-serif;
-            padding:0;
+            margin: 0;
+            padding: 0;
             background-color: #f5f5f5;
             display: flex;
             flex-direction: column;
-            min-height: 100px; /* 100% chiều cao của viewport */
+            min-height: 100vh; /* 100% of the viewport height */
+            color: #555; /* Default text color */
         }
         header {
-            background-color: #333;
+            background-color: #87CEEB; /* Sky Blue */
             color: #fff;
-            padding: 0;
+            padding: 10px 0;
             text-align: center;
             position: sticky;
             top: 0;
-            z-index: 999; /* Đảm bảo header luôn ở trên cùng */
+            z-index: 999; /* Ensures the header is always on top */
         }
         header h1 {
             margin: 0;
-            padding: 0;
             font-size: 24px;
         }
         header nav ul {
@@ -44,16 +41,16 @@
         header nav ul li a {
             color: #fff;
             text-decoration: none;
-            padding: 1px 1px;
+            padding: 5px 10px;
             border-radius: 5px;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, box-shadow 0.3s; /* Adding transition */
         }
         header nav ul li a:hover {
-            background-color: grey;
-            text-decoration-line: underline; /* Thêm gạch dưới khi di chuột vào */
+            background-color: #5F9EA0; /* Cadet Blue */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Adding shadow on hover */
         }
         main {
-            flex: 1; /* Main sẽ mở rộng để lấp đầy phần còn trống của viewport */
+            flex: 1;
         }
         section {
             margin-bottom: 20px;
@@ -62,26 +59,32 @@
             border-radius: 5px;
         }
         footer {
-            background-color: #333;
+            background-color: #87CEEB; /* Sky Blue */
             color: #fff;
             text-align: center;
             padding: 10px 0;
         }
         .Database {
-            margin-left: auto;
-            margin-right: auto;
+            margin: auto;
             display: block;
             max-width: 100%;
             height: auto;
         }
         .sectionH {
             text-align: center; 
-            background-color: #333;
+            background-color: #5F9EA0; /* Cadet Blue */
             color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
         }
-        .svth{
-
-            text-align: center ;
+        .svth {
+            text-align: center;
+            color: #555;
+            transition: color 0.3s; /* Adding transition for text color */
+        }
+        .svth:hover {
+            color: #87CEEB; /* Changing text color on hover */
         }
 
     </style>
@@ -111,9 +114,9 @@
                 <li>Tên Sinh Viên 1: Trần Ngọc Thọ</li>
                 <li>MSSV: DTH216170</li>
                 <li>Tên Sinh Viên 2: Dư Thị Kim Quyên</li>
-                <li>MSSV: DTH216117</li>
+                <li>MSSV: DTH21555</li>
                 <li>OutLook: tho_dth216170@student.agu.edu.vn</li>
-                <li>OutLook: quyen_dth216117@student.agu.edu.vn</li>
+                <li>OutLook: quen_dth216170@student.agu.edu.vn</li>
                 <li>Ngôn ngữ: C# Windows Forms app (.NET Framework)</li>
             </ul>
         </section>
@@ -385,143 +388,23 @@
                     </li>
                 </ul>
             </section>
-        </section>
-
-        
-        
-    </main>
-    <footer>
-        <p>&copy; 2024 Trần Ngọc Thọ/Dư Thị Kim Quyên - AGU</p>
-    </footer>
-</body>
-</html>
-h, initial-scale=1.0">
-    <title>ỨNG DỤNG QUẢN LÝ BÁN ĐIỆN THOẠI - HCMUS PROJECT</title>
-    <style>
-        /* Thiết lập kiểu CSS */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        section {
-            margin-bottom: 20px;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>ỨNG DỤNG QUẢN LÝ BÁN TV - AGU PROJECT</h1>
-    </header>
-    <main>
-        
-        <section>
-            <h2>I. Sinh Viên Thực Hiện</h2>
-            <ul>
-                <li>Họ và Tên Sinh Viên 1: Trần Ngọc Thọ</li>
-                <li>MSSV: DTH216170</li>
-                <li>Họ và Tên Sinh Viên 2: Dư Thị Kim Quyên</li>
-                <li>MSSV: DTH21555</li>
-                <li>OutLook: tho_dth216170@student.agu.edu.vn</li>
-                <li>OutLook: quen_dth216170@student.agu.edu.vn</li>
-                <li>Gmail: Ngocthopro9999@gmail.com</li>
-                <li>Gmail: Duquyen@gmail.com</li>
-                <li>Ngôn ngữ: C# Windows Forms app (.NET Framework)</li>
-            </ul>
-        </section>
-        <section>
-            <h2>II. Database</h2>
             <section>
-            <h2>Ảnh minh họa</h2>
-            <!-- Thêm ảnh vào -->
-            <img src="SQL.jpg" alt="Mô tả ảnh">
-        </section>
-        </section>
-        <section>
-            <h2>III. Chạy chương trình</h2>
-            <ol>
-                <li>View -> Server Exploder -> nhấp phải chuột vào Data Connectitons -> Add Connection... -> Microsoft SQL Server Database File -> chọn OK</li>
-                <li>Sau khi hộp thoại Add Connection xuất hiện, ở mục Data file name (new or existing), chọn Browse... -> Chọn đến thư mục Source code(DoAn) -> bin -> Debug -> chọn DoAn.mdf -> chọn Test Connection ở góc trái bên dưới, khi nào chương trình báo successed, chọn Ok để đóng hộp thoại Add Connection.</li>
-                <li>Sau khi Test Connection thành công, chạy chương trình như bình thường.</li>
-            </ol>
-        </section>
-        <section>
-            <h2>IV. Các chức năng đã làm được</h2>
-            <ol>
-                <li>
-                    <h3>Hàng hóa</h3>
-                    <ul>
-                        <img src="hsx.png">
-                        <li>Xem danh sách các hãng TV</li>
-                        <li>Thêm, cập nhật, xóa tên hãng TV</li>
-                        <li>Xem danh sách các TV</li>
-                        <li>Xem danh sách các sản phẩm ứng với một hãng</li>
-                        <li>Thêm, cập nhật, xóa thông tin một TV</li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>Đơn hàng</h3>
-                    <ul>
-                        <li>Xem danh sách các đơn hàng</li>
-                        <li>Xem chi tiết đơn hàng</li>
-                        <li>Thêm đơn hàng</li>
-                        <li>Cập nhập chi tiết đơn hàng</li>
-                        <li>Xóa đơn hàng</li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>Khách hàng</h3>
-                    <ul>
-                        <li>Xem danh sách khách hàng</li>
-                        <li>Thêm khách hàng</li>
-                        <li>Cập nhập khách hàng</li>
-                        <li>Xóa khách hàng</li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>Thống kê</h3>
-                    <ul>
-                        <li>Hiển thị danh sách các mặt hàng sắp hết (số lượng &lt; 10)</li>
-                        <li>Cho biết các mặt hàng bán chạy trong tháng trước (lấy TOP 10)</li>
-                        <li>Tìm mặt hàng bán chạy trong từng tháng</li>
-                        <li>Cho biết doanh thu, lợi nhuận theo một tháng cụ thể</li>
-                    </ul>
-                </li>
-            </ol>
-        </section>
-        <section>
             <h2>V. Các điểm đáng chú ý</h2>
             <ul>
                 <li>Thiết kết giao diện người dùng</li>
-                <li>Thêm hai phần nhân viên và khách hàng với các chức năng xem danh sách, thêm, xóa, sửa</li>
                 <li>Hiển thị hình ảnh (.jpg, kích thước 240x240)</li>
                 <li>Khi đang ở chế độ thêm, người dùng không thể click vào dataGridView hay nút tìm kiếm</li>
                 <li>Kiểm tra trùng khóa chính và dữ liệu nhập đầy đủ khi thêm hoặc cập nhật chi tiết đơn hàng</li>
             </ul>
         </section>
-        <section>
-            <h2>VI. Link demo</h2>
+            <section>
+            <h2>VI.Link demo</h2>
             <p><a href="https://drive.google.com/file/d/1kZX6CxTDwzxdcTlxW-sT8XiuWB4k2waN/view?usp=drive_link">Xem video demo</a></p>
         </section>
+        </section>
+
+        
+        
     </main>
     <footer>
         <p>&copy; 2024 Trần Ngọc Thọ/Dư Thị Kim Quyên - AGU</p>
