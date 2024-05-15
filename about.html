@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ỨNG DỤNG QUẢN LÝ BÁN TV - AGU PROJECT</title>
+    <style>
+        /* Thiết lập kiểu CSS */
+        body {
+            font-family: Arial, sans-serif;
+            padding:0;
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            min-height: 100px; /* 100% chiều cao của viewport */
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 999; /* Đảm bảo header luôn ở trên cùng */
+        }
+        header h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 24px;
+        }
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 1px 1px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        header nav ul li a:hover {
+            background-color: grey;
+            text-decoration-line: underline; /* Thêm gạch dưới khi di chuột vào */
+        }
+        main {
+            flex: 1; /* Main sẽ mở rộng để lấp đầy phần còn trống của viewport */
+        }
+        section {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .Database {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        .sectionH {
+            text-align: center; 
+            background-color: #333;
+            color: #fff;
+        }
+        .svth{
+
+            text-align: center ;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ỨNG DỤNG QUẢN LÝ BÁN TV - AGU PROJECT</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#tc">Trang chủ ứng dụng</a></li>
+                <li><a href="#nhanvien">Nhân viên</a></li>
+                <li><a href="#sanpham">Sản phẩm</a></li>
+                <li><a href="#banhang">Bán hàng</a></li>
+                <li><a href="#hsx">Hãng sản xuất</a></li>
+                <li><a href="#khachang">Khách hàng</a></li>
+                <li><a href="#xhd">Xem all HĐ</a></li>
+                <li><a href="#doimk">Đổi MK</a></li>
+                <li><a href="#ttcn">Xem TTCnhân</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>I. Sinh Viên Thực Hiện</h2>
+            <ul class="svth">
+                <li>Tên Sinh Viên 1: Trần Ngọc Thọ</li>
+                <li>MSSV: DTH216170</li>
+                <li>Tên Sinh Viên 2: Dư Thị Kim Quyên</li>
+                <li>MSSV: DTH21555</li>
+                <li>OutLook: tho_dth216170@student.agu.edu.vn</li>
+                <li>OutLook: quen_dth216170@student.agu.edu.vn</li>
+                <li>Ngôn ngữ: C# Windows Forms app (.NET Framework)</li>
+            </ul>
+        </section>
+        <section>
+            <h2>II. Database</h2>
+            <section>
+            <h2>Ảnh minh họa</h2>
+            <img class="Database" src="sql.png" alt="Mô tả ảnh">
+            </section>
+        </section>
+        <section>
+            <h2>III. Chạy chương trình</h2>
+            <ol>
+                <li>View -> Server Exploder -> nhấp phải chuột vào Data Connectitons -> Add Connection... -> Microsoft SQL Server Database File -> chọn OK</li>
+                <li>Sau khi hộp thoại Add Connection xuất hiện, ở mục Data file name (new or existing), chọn Browse... -> Chọn đến thư mục Source code(DoAn) -> bin -> Debug -> chọn DoAn.mdf -> chọn Test Connection ở góc trái bên dưới, khi nào chương trình báo successed, chọn Ok để đóng hộp thoại Add Connection.</li>
+                <li>Sau khi Test Connection thành công, chạy chương trình như bình thường.</li>
+            </ol>
+        </section>
+        <section>
+            <h2>IV. Các chức năng đã làm được</h2>
+            <section id="tc">
+            <h2 class="sectionH">*Trang chủ</h2>
+            <img class="Database" src="tc.png">
+            <ul>
+                <li>
+                    <h3>Thao tác với trang chủ</h3>
+                    <ul>
+                        <li>HOME</li>
+                        <li>Xem tất cả khách hàng</li>
+                        <li>Bán hàng</li>
+                        <li>Quản lý sản phẩm</li>
+                        <li>Xem tất cả nhân viên</li>
+                        <li>Quản lý hãng sản xuất</li>
+                        <li>Xem tất cả hóa đơn</li>
+                        <li>Đăng xuất</li>
+                        <li>
+                            Hệ thống <br>
+                                - Thông tin cá nhân <br>
+                                - About <br>
+                                - Exit <br>
+                        </li>
+                        <li>
+                            Thống kê <br>
+                                - Thống kê sản phẩm <br>
+                                - Thống kê danh thu <br>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+            <section id="nhanvien">
+            <h2 class="sectionH">*Nhân viên</h2>
+            <img class="Database" src="nv.png">
+            <ul>
+                <li>
+                    <h3>Nhập thông tin nhân viên</h3>
+                    <ul>
+                        <li>Tên nhân viên</li>
+                        <li>Số điện thoại (SDT)</li>
+                        <li>Email</li>
+                        <li>Chức vụ</li>
+                        <li>Địa chỉ</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Tìm kiếm thông tin nhân viên</h3>
+                    <ul>
+                        <li>Nhập thông tin cần tìm</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Thao tác với danh sách nhân viên</h3>
+                    <ul>
+                        <li>Thêm mới nhân viên</li>
+                        <li>Sửa thông tin nhân viên</li>
+                        <li>Lưu thông tin đã thay đổi</li>
+                        <li>Xóa thông tin nhân viên</li>
+                        <li>Hủy bỏ thao tác</li>
+                        <li>Đóng cửa sổ</li>
+                        <li>Nhập dữ liệu từ tệp (Import)</li>
+                        <li>Xuất dữ liệu ra tệp (Export)</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        
+            <section id="sanpham">
+            <h2 class="sectionH">*Sản phẩm</h2>
+            <img class="Database" src="sp.png">
+            <ul>
+                <li>
+                    <h3>Nhập thông tin sản phẩm</h3>
+                    <ul>
+                        <li>Tên sản phẩm</li>
+                        <li>Hãng</li>
+                        <li>Mô tả</li>
+                        <li>Loại sản phẩm</li>
+                        <li>Thêm ảnh sản phẩm</li>
+                        <li>Giá bán</li>
+                        <li>Số lượng</li>
+                        <li>Thêm ảnh</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Tìm kiếm thông tin sản phẩm</h3>
+                    <ul>
+                        <li>Nhập thông tin cần tìm</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Thao tác với danh sách sản phẩm</h3>
+                    <ul>
+                        <li>Thêm mới sản phẩm</li>
+                        <li>Sửa thông tin sản phẩm</li>
+                        <li>Lưu thông tin đã thay đổi</li>
+                        <li>Xóa thông tin sản phẩm</li>
+                        <li>Hủy bỏ thao tác</li>
+                        <li>Đóng cửa sổ</li>
+                        <li>Nhập dữ liệu từ tệp (Import)</li>
+                        <li>Xuất dữ liệu ra tệp (Export)</li>
+                    </ul>
+                </li>
+            </ul>
+            </section>
+        
+            <section id="banhang">
+                <h2 class="sectionH">*Bán hàng</h2>
+                <img class="Database" src="bh.png">
+                <ul>
+                    <li>
+                        <h3>Nhập thông tin bán hàng</h3>
+                        <ul>
+                            <li>Tên khách hàng</li>
+                            <li>Địa chỉ</li>
+                            <li>Email</li>
+                            <li>Số điện thoại(SĐT)</li>
+                            <li>Thêm sản phẩm</li>
+                            <li>Giá bán</li>
+                            <li>Số lượng</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Thao tác với bán hàng</h3>
+                        <ul>
+                            <li>Xác nhận bán</li>
+                            <li>Lưu thông tin hóa đơn</li>
+                            <li>Xóa</li>
+                            <li>In hóa đơn</li>
+                            <li>Đóng cửa sổ</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section id="hsx">
+                <h2 class="sectionH">*Hãng sản xuất</h2>
+                <img class="Database" src="hsx.png">
+                <ul>
+                    <li>
+                        <h3>Nhập thông tin hãng sản xuất</h3>
+                        <ul>
+                            <li>Tên hãng</li>
+                            <li>Địa chỉ</li>
+                            <li>Email</li>
+                            <li>Số điện thoại(SĐT)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Tìm kiếm thông tin hãng sản xuất</h3>
+                        <ul>
+                            <li>Nhập thông tin cần tìm</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Thao tác với Hãng sản xuất</h3>
+                        <ul>
+                            <li>Thêm mới hãng</li>
+                            <li>Sửa thông tin hãng</li>
+                            <li>Lưu thông tin hãng</li>
+                            <li>Xóa thông tin hãng</li>
+                            <li>Hủy bỏ thao tác</li>
+                            <li>Đóng cửa sổ</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section id="khachang">
+                <h2 class="sectionH">*Khách hàng</h2>
+                <img class="Database" src="kh.png">
+                <ul>
+                    <li>
+                        <h3>Nhập thông tin khách hàng</h3>
+                        <ul>
+                            <li>Tên khách hàng</li>
+                            <li>Địa chỉ</li>
+                            <li>Email</li>
+                            <li>Số điện thoại(SĐT)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Tìm kiếm thông tin khách hàng</h3>
+                        <ul>
+                            <li>Nhập thông tin cần tìm</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Thao tác với khách hàng</h3>
+                        <ul>
+                            <li>Thêm mới khách hàng</li>
+                            <li>Sửa thông tin khách hàng</li>
+                            <li>Lưu thông tin khách hàng</li>
+                            <li>Xóa thông tin khách hàng</li>
+                            <li>Hủy bỏ thao tác</li>
+                            <li>Đóng cửa sổ</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section id="ttcn">
+                <h2 class="sectionH">*Thông tin cá nhân</h2>
+                <img class="Database" src="ttnv.png">
+                <ul>
+                    <li>
+                        <h3>Xem được thông tin or Thay đổi chúng</h3>
+                        <ul>
+                            <li>Tên</li>
+                            <li>Địa chỉ</li>
+                            <li>Email</li>
+                            <li>Số điện thoại(SĐT)</li>
+                            <li>Tên tài khoản</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Thao tác</h3>
+                        <ul>
+                            <li>Đổi mật khẩu</li>
+                            <li>Cập nhập thông tin</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section id="doimk">
+                <h2 class="sectionH">*Đổi mật khẩu</h2>
+                <img class="Database" src="mk.png">
+                <ul>
+                    <li>
+                        <h3>Thao tác</h3>
+                        <ul>
+                            <li>Nhập mật khẩu cũ</li>
+                            <li>Nhập mật khẩu mới</li>
+                            <li>Xác nhận mật khẩu</li>
+                            <li>Xác nhận</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section id="xhd">
+                <h2 class="sectionH">*Xem tất cả hóa đơn</h2>
+                <img class="Database" src="xhd.png">
+                <ul>
+                    <li>
+                        <h3>Thao tác</h3>
+                        <ul>
+                            <li>In hóa đơn</li>
+                            <li>Sữa hóa đơn</li>
+                            <li>Xóa hóa đơn</li>
+                            <li>Xuất dữ liệu ra tệp (Export)</li>
+                            <li>Đóng</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Trần Ngọc Thọ/Dư Thị Kim Quyên - AGU</p>
+    </footer>
+</body>
+</html>
